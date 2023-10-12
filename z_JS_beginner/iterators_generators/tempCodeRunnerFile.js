@@ -1,0 +1,1 @@
+gen_obj.next());// 执行 yield 'foo'，返回 'foo'
