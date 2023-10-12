@@ -1,7 +1,7 @@
 function ListNode(val, next) {
     this.val = (val === undefined ? 0 : val)
     this.next = (next === undefined ? null : next)
-};
+}
 
 /**
  * @param {ListNode} head
@@ -12,8 +12,7 @@ var reorderList = function(head) {
     let mid = findMidNode(head);
     let second = reverse(mid.next);
     mid.next = null;
-    let mergedList = merge(head, second);
-    head = mergedList;
+    head = merge(head, second);
 };
 
 var findMidNode = function(tmpHead) {
